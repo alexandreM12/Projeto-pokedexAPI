@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Links -->
+  <link rel="icon" href="./favicon-16x16.png">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Main JS -->
+  <script defer src="script.js"></script>
+
+  <title>Pokédex</title>
+</head>
+<body>
+  
+  <main>
+
+    <img src="#" alt="pokemon" class="pokemon__image">
+
+    <!-- Informações do Pokémon serão exibidas aqui -->
+    <div class="pokemon-info-background">
+      <h1 class="pokemon-info" id="pokemonInfo">
+        <span class="pokemon__number"></span> -
+        <span class="pokemon__nome"></span>
+      </h1>
+
+      <div class="pokemon-details">
+        <div class="pokemon-type-buttons">
+          <button class="pokemon-type-button fire">Fire</button>
+          <button class="pokemon-type-button water">Water</button>
+          <button class="pokemon-type-button grass">Grass</button>
+          <button class="pokemon-type-button electric">Electric</button>
+          <button class="pokemon-type-button ice">Ice</button>
+          <button class="pokemon-type-button fighting">Fighting</button>
+          <button class="pokemon-type-button poison">Poison</button>
+          <button class="pokemon-type-button ground">Ground</button>
+          <button class="pokemon-type-button flying">Flying</button>
+          <button class="pokemon-type-button psychic">Psychic</button>
+          <button class="pokemon-type-button bug">Bug</button>
+          <button class="pokemon-type-button rock">Rock</button>
+          <button class="pokemon-type-button ghost">Ghost</button>
+          <button class="pokemon-type-button dragon">Dragon</button>
+          <button class="pokemon-type-button dark">Dark</button>
+          <button class="pokemon-type-button steel">Steel</button>
+          <button class="pokemon-type-button fairy">Fairy</button>
+        </div>
+        <p class="pokemon__height"></p>
+        <p class="pokemon__weight"></p>
+      </div>
+    </div>
+
+    <form class="form">
+      <input
+        type="search"
+        class="pesquise"
+        placeholder="Nome e ID"
+        required
+      />
+    </form>
+
+    <div class="buttons">
+      <button class="button btn-prev">antes &lt;</button>
+      <button class="button btn-next">próximo &gt;</button>
+    </div>
+
+    <img src="./pokedex.png" alt="pokedex" class="pokedex">
+  </main>
+
+</body>
+</html>

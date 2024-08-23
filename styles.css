@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oxanium', cursive;
+}
+
+body {
+  text-align: center;
+  background: linear-gradient(to bottom, #6ab7f5, #fff);
+  min-height: 100vh;
+}
+
+main {
+  display: inline-block;
+  margin-top: 2%;
+  padding: 15px;
+  position: relative;
+}
+
+.pokedex {
+  width: 100%;
+  max-width: 425px;
+}
+
+.pokemon__image {
+  position: absolute;
+  bottom: 52%;
+  left: 62%;
+  transform: translate(-63%, 20%);
+  height: 10%;
+}
+
+.pokemon-info {
+  position: absolute;
+  font-weight: 600;
+  color: #aaa;
+  top: 54.5%;
+  right: 27%;
+  font-size: clamp(8px, 5vw, 25px);
+  
+}
+
+.pokemon__nome {
+  color: #3a444d;
+  text-transform: capitalize;
+}
+
+/* Novo estilo para detalhes do Pokémon */
+.pokemon-details {
+  position: absolute;
+  top: 29%;
+  left: 19%;
+  width: 30%;
+  color: #201f1f;
+  font-size: clamp(8px, 5vw, 1rem);
+  font-weight: 600;
+  text-align: left;
+  line-height: 1.6;
+  background-color: rgba(230, 230, 230, 0.7); /* Fundo branco com transparência */
+  border-radius: 10px; /* Bordas arredondadas para um visual suave */
+  z-index: 1; /* Garantir que fique atrás do texto */
+  padding-left: 7px; /* Adiciona espaçamento à esquerda */
+
+}
+
+.pokemon__type,
+.pokemon__height,
+.pokemon__weight {
+  margin: 1px 0;
+  font-size: 0.8rem;
+}
+
+.form {
+  position: absolute;
+  width: 65%;
+  top: 65%;
+  left: 13.5%;
+}
+
+.pesquise {
+  width: 100%;
+  padding: 4%;
+  outline: none;
+  border: 2px solid #333;
+  border-radius: 5px;
+  font-weight: 600;
+  color: #3a444d;
+  font-size: clamp(8px, 5vw, 1rem);
+  box-shadow: -3px 4px 0 #888, -5px 7px 0 #333
+}
+
+.buttons {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  width: 65%;
+  transform: translate(-57%, 0);
+  display: flex;
+  gap: 20px;
+}
+
+.button {
+  width: 50%;
+  padding: 4%;
+  border: 2px solid #000;
+  border-radius: 5px;
+  font-size: clamp(8px, 5vw, 1rem);
+  font-weight: 600;
+  color: white;
+  background-color: #444;
+  box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+}
+
+.button:active {
+  box-shadow: inset -4px 4px 0 #222;
+  font-size: 0.9rem;
+}
+.pokemon-type-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px; /* Espaçamento entre os botões */
+  margin: 20px 0; /* Margem acima e abaixo do bloco de botões */
+}
+
+.pokemon-type-button {
+  background-color: #f5f5f5; /* Cor de fundo neutra */
+  border: 2px solid #ccc; /* Borda leve */
+  border-radius: 12px; /* Bordas arredondadas */
+  padding: 2px 3px; /* Espaçamento interno ajustado */
+  font-size: 0.8rem; /* Tamanho da fonte */
+  font-weight: 600; /* Negrito */
+  color: #333; /* Cor do texto */
+  cursor: pointer; /* Cursor de ponteiro */
+  transition: background-color 0.3s, border-color 0.3s; /* Transição suave */
+  display: none; /* Inicialmente oculto */
+}
+
+.pokemon-type-button:hover {
+  background-color: #e0e0e0; /* Cor de fundo ao passar o mouse */
+  border-color: #1fb9a9; /* Cor da borda ao passar o mouse */
+}
+
+.pokemon-type-button:active {
+  background-color: #ccc; /* Cor de fundo ao clicar */
+  border-color: #aaa; /* Cor da borda ao clicar */
+}
+
+/* Cores dos botões baseadas em tipos */
+.pokemon-type-button.fire { background-color: #fe6565; }
+.pokemon-type-button.water { background-color: #3a72ff; }
+.pokemon-type-button.grass { background-color: #70fd91; }
+.pokemon-type-button.electric { background-color: #ffe48a; }
+.pokemon-type-button.ice { background-color: #d6d8db; }
+.pokemon-type-button.fighting { background-color: #f5c6cb; }
+.pokemon-type-button.poison { background-color: #ffa0ef; }
+.pokemon-type-button.ground { background-color: #fae5d3; }
+.pokemon-type-button.flying { background-color: #c1ccd5; }
+.pokemon-type-button.psychic { background-color: #f5c6cb; }
+.pokemon-type-button.bug { background-color: #9be3ac; }
+.pokemon-type-button.rock { background-color: #e2e3e5; }
+.pokemon-type-button.ghost { background-color: #d6d8db; }
+.pokemon-type-button.dragon { background-color: #d1ecf1; }
+.pokemon-type-button.dark { background-color: #c6e0f5; }
+.pokemon-type-button.steel { background-color: #d6d8db; }
+.pokemon-type-button.fairy { background-color: #f8d7da; }
